@@ -1,0 +1,2 @@
+# The Math Skater
+ “MathSkater” is an educational game where players improve their math skills while enjoying a dynamic and interactive experience. The game features a skater that jumps over obstacles as players solve math problems. Built using JavaFX and Apache Derby, MathSkater offers a simple yet challenging gameplay with a clean user interface and an admin panel for managing game data and user details.
