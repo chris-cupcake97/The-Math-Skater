@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="582.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="themathskater.View_and_Controllers.AdminPanelController">
+   <children>
+      <VBox prefHeight="582.0" prefWidth="272.0" style="-fx-background-color: #010402;">
+         <children>
+            <Pane prefHeight="146.0" prefWidth="272.0">
+               <children>
+                  <ImageView fitHeight="168.0" fitWidth="168.0" layoutX="45.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Resources/LOGO.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" mnemonicParsing="false" onAction="#loadDatails" prefHeight="75.0" prefWidth="273.0" style="-fx-background-color: #4BC3B5;" stylesheets="@style.css" text="User Details" textAlignment="CENTER" textFill="#f5f2f2">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="75.0" prefWidth="273.0" style="-fx-background-color: #4BC3B5;" stylesheets="@style.css" text="Questions" textFill="#f5f2f2">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="75.0" prefWidth="273.0" style="-fx-background-color: #4BC3B5;" stylesheets="@style.css" text="Reports" textFill="#f5f2f2">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="75.0" prefWidth="273.0" style="-fx-background-color: #4BC3B5;" stylesheets="@style.css" text="Help" textAlignment="CENTER" textFill="#f5f2f2">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <GridPane layoutX="272.0" layoutY="265.0" prefHeight="317.0" prefWidth="696.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="153.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="275.0" minHeight="10.0" prefHeight="270.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TableView fx:id="player" prefHeight="270.0" prefWidth="663.0" stylesheets="@style.css" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="colusername" prefWidth="160.0" text="Name" />
+                <TableColumn fx:id="colemail" prefWidth="151.0" text="Email" />
+                  <TableColumn fx:id="colage" minWidth="0.0" prefWidth="79.0" text="Age" />
+                  <TableColumn fx:id="colpassword" maxWidth="200.0" prefWidth="139.33331298828125" text="Password" />
+                  <TableColumn fx:id="colhighscore" maxWidth="244.33331298828125" prefWidth="101.33331298828125" text="Highscore" />
+              </columns>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TableView>
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="73.0" style="-fx-background-color: #010402;" stylesheets="@style.css" text="Search" textFill="#f8f5f5" />
+         </children>
+      </GridPane>
+      <TextArea layoutX="354.0" layoutY="267.0" prefHeight="32.0" prefWidth="389.0" />
+      <Pane layoutX="272.0" layoutY="108.0" prefHeight="109.0" prefWidth="711.0" style="-fx-background-color: #1C2C54;">
+         <children>
+            <Label layoutX="123.0" layoutY="45.0" text="Math skater" textFill="#f2ecec">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="906.0" layoutY="17.0" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: #010402;" text="Log Out" textFill="#f5ebeb">
+         <font>
+            <Font name="Cooper Black" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

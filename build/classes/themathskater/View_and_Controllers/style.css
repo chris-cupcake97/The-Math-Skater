@@ -1,0 +1,126 @@
+.head-background
+{
+    -fx-background-color: linear-gradient(to left,#795AF3 ,#3929E0);
+}
+
+.parent{
+    -fx-background-color: transparent;
+}
+.pane{
+    -fx-background-color: #333;
+}
+.btn-slide{
+    -fx-background-color: black;
+    -fx-background-radius: 5px;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill: whitesmoke;
+}
+.btn-slide:hover{
+    -fx-border-width: 2px;
+    -fx-opacity: .7;
+}
+.white-pane{
+    -fx-background-color: #fff;
+}
+.tf-box{
+    -fx-background-color: transparent;
+    -fx-border-color: #dedee4;
+    -fx-border-width: 0px 0px 1px 0px; 
+}
+.tf{
+    -fx-background-color: transparent;
+    
+}
+.pink-btn{
+    -fx-background-color: #f78c7b;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #fff;
+}
+#buttons:selected{
+    -fx-background-color: green;
+}
+.btn{
+    -fx-text-fill: #fff;
+}
+.btn:hover{
+    -fx-background-color: #00c853;
+    -fx-text-fill: #fff;
+    -fx-text-alignment: center;
+}
+.btn:focused{
+    -fx-background-color: rgba(0,0,0,0.3);
+    -fx-text-fill: #fff;
+}
+.focused{
+    -fx-background-color: rgba(0,0,0,0.3);
+    -fx-text-fill: #fff;
+}
+
+.pause-play {
+    -fx-background-color: #242424;
+    -fx-text-fill: white;
+}
+
+.pause-play:hover {
+    -fx-background-color: #9a7421;
+    -fx-text-fill: white;
+}
+
+
+.button {
+    -fx-background-color: #63a4ff;
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+}
+
+
+
+.button:hover {
+    -fx-background-color: white;
+    -fx-background-radius: 7;
+    -fx-border-color: #4BC3B5;
+    -fx-border-radius: 5;
+    -fx-border-width: 3;
+}
+
+.button:pressed{
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-border-color: #5B5A5A;
+    -fx-border-radius: 5;
+    -fx-border-width: 3;
+    
+}
+
+.button:focused{
+    
+    -fx-background-color: #b3e5fc;
+    -fx-background-radius: 5;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-border-width: 3;
+    
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size : 20;
+    -fx-background-color:   #010402;
+}
+.table-view .column-header .label{
+
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-alignment: CENTER_LEFT;
+}
+.table-view .cell{
+   -fx-cell-size: 30;
+  -fx-alignment: center-left;
+  -fx-text-fill: #000000;
+  -fx-alignment: CENTER_LEFT;
+}

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="themathskater.View_and_Controllers.RegistrationFXMLController">
+   <children>
+      <BorderPane prefHeight="502.0" prefWidth="420.0">
+         <center>
+            <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <SplitPane dividerPositions="0.7562814070351759" orientation="VERTICAL" prefHeight="400.0" prefWidth="446.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="361.0" prefWidth="418.0" style="-fx-background-color: #4BC3B5;">
+                           <children>
+                              <GridPane layoutX="64.0" layoutY="47.0" prefHeight="223.0" prefWidth="312.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="156.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="156.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label contentDisplay="CENTER" text="Name:" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="50.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="txtname" promptText=" Enter your name" GridPane.columnIndex="1">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect></TextField>
+                                    <Label layoutX="10.0" layoutY="14.0" text="Email:" textAlignment="CENTER" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="50.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="txtemail" layoutX="109.0" layoutY="13.0" promptText="Enter your email" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect></TextField>
+                                    <Label layoutX="10.0" layoutY="44.0" text="Password:" textAlignment="CENTER" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="30.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label contentDisplay="CENTER" layoutX="10.0" layoutY="114.0" text="Confirm Password:" textAlignment="CENTER" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <PasswordField fx:id="txtconpassword" promptText="Re-enter password" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect></PasswordField>
+                                    <PasswordField fx:id="txtpassword" promptText="Enter Password" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect></PasswordField>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" text="Age:" textAlignment="CENTER" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="18.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets left="50.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label text="Gender:" textAlignment="CENTER" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="40.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="txtage" promptText="Enter your age" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect></TextField>
+                                    <TextField fx:id="txtgender" promptText="Enter F or M" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect></TextField>
+                                 </children>
+                              </GridPane>
+                              <ButtonBar layoutX="105.0" layoutY="294.0" prefHeight="36.0" prefWidth="200.0">
+                                 <buttons>
+                                    <Button fx:id="OK_btn" defaultButton="true" mnemonicParsing="false" onAction="#register" prefHeight="48.0" prefWidth="190.0" style="-fx-background-color: #010402;" stylesheets="@style.css" text="Sign Up" textFill="#f2eeee">
+                                       <font>
+                                          <Font name="Cooper Black" size="24.0" />
+                                       </font></Button>
+                                 </buttons></ButtonBar>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="136.0" prefWidth="418.0" style="-fx-background-color: #010402;">
+                           <children>
+                              <ImageView fitHeight="81.0" fitWidth="147.0" layoutX="136.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Resources/signup.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

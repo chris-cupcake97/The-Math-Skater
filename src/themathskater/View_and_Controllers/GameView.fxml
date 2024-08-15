@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="755.0" stylesheets="@ourCssFile.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="themathskater.View_and_Controllers.GameViewController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <SplitPane dividerPositions="0.8198198198198198" orientation="VERTICAL" prefHeight="557.0" prefWidth="755.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Text fill="#010402" strokeType="OUTSIDE" strokeWidth="0.0" text="SCORE" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="30.0">
+                           <font>
+                              <Font name="Cooper Black" size="27.0" />
+                           </font>
+                        </Text>
+                        <HBox fx:id="background_HBox" maxHeight="500.0" maxWidth="755.0" minWidth="746.0" prefHeight="491.0" prefWidth="137.0" spacing="50.0" />
+                        <Button layoutX="661.0" layoutY="399.0" mnemonicParsing="false" onAction="#Replay" style="-fx-background-color: #010402;" text="REPLAY" textFill="#f8f3f3">
+                           <font>
+                              <Font name="Cooper Black" size="16.0" />
+                           </font>
+                           
+                              </Button>
+                        <Text fx:id="skater_status" fill="#d38817" layoutX="120.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="System Bold" size="60.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="skater_view" disable="true" fitHeight="335.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-30.0" AnchorPane.leftAnchor="200.0">
+                           <image>
+                              <Image url="@../Resources/Img1.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="pauseBtn" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#pauseGame" style="-fx-background-color: Transparent; -fx-border-radius: 0;" text="Pause" textFill="#010402" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="20.0">
+                           <font>
+                              <Font name="Cooper Black" size="24.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="score_textfield" alignment="CENTER_RIGHT" editable="false" focusTraversable="false" prefHeight="43.0" prefWidth="149.0" text="0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="15.0">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </TextField>
+                     </children></AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <HBox fx:id="hbox" layoutX="20.0" layoutY="23.0" prefHeight="51.0" prefWidth="683.0" spacing="20.0">
+                           <children>
+                              <Text fx:id="question_text" fill="#9a7421" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #010402;" text="Question">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="button1" mnemonicParsing="false" onAction="#Our_Button_Method" onMouseEntered="#handleOnMouseEntered" onMouseExited="#handleOnMouseExited" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: #4BC3B5;" textFill="#f5eeee">
+                                 
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="button2" layoutX="130.0" layoutY="10.0" mnemonicParsing="false" onAction="#Our_Button_Method" onMouseEntered="#handleOnMouseEntered" onMouseExited="#handleOnMouseExited" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: #4BC3B5;">
+                                 
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="button3" layoutX="262.0" layoutY="10.0" mnemonicParsing="false" onAction="#Our_Button_Method" onMouseEntered="#handleOnMouseEntered" onMouseExited="#handleOnMouseExited" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: #4BC3B5 #4BC3B5;">
+                                 
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="button4" layoutX="394.0" layoutY="10.0" mnemonicParsing="false" onAction="#Our_Button_Method" onMouseEntered="#handleOnMouseEntered" onMouseExited="#handleOnMouseExited" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: #4BC3B5;">
+                                
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
